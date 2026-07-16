@@ -21,13 +21,24 @@
   <p>This privacy policy applies to the Urobi app (hereby referred to as "Application") for mobile devices that was created by Robert Schirmer (hereby referred to as "Service Provider") as a Commercial service. This service is intended for use "AS IS".</p>
 
   <h2>What information does the Application obtain and how is it used?</h2>
-  <p>The Application does not obtain any information when you download and use it. Registration is not required to use the Application.</p>
+  <p>The Application does not collect personally identifiable information (such as your name, email address, or location). No account registration is required to use the Application.</p>
+  <p>To provide its services, the Application communicates with a backend server operated by the Service Provider. The backend stores the following data linked to an anonymous device identifier:</p>
+  <ul>
+    <li><strong>Anonymous device ID</strong> — a randomly generated identifier (UUID) assigned to your device, not linked to your name, Apple ID, or any personal identity.</li>
+    <li><strong>Tier &amp; credit balance</strong> — whether your device is on the free or standard tier, and your current credit balance.</li>
+    <li><strong>Usage logs</strong> — per-request records including the AI model used, token counts, estimated cost, and timestamp. Retained for billing and fraud-prevention purposes.</li>
+    <li><strong>Credit transaction history</strong> — an audit ledger of free grants, purchases, and usage debits.</li>
+    <li><strong>Security tokens</strong> — a refresh token (valid for 30 days) and a per-device HMAC secret used to authenticate requests. These contain no personal information.</li>
+    <li><strong>App version &amp; last seen</strong> — used for compatibility and support purposes.</li>
+  </ul>
+  <p>No images, voice recordings, or AI-generated text are stored on the Service Provider's servers.</p>
 
   <h2>Does the Application collect precise real time location information of the device?</h2>
   <p>This Application does not collect precise information about the location of your mobile device.</p>
 
   <h2>Do third parties see and/or have access to information obtained by the Application?</h2>
-  <p>Since the Application does not collect any information, no data is shared with third parties.</p>
+  <p>When you actively use AI-assisted features, camera images (resized), voice transcriptions (text only, transcribed on-device), and generated text for speech synthesis are routed through the Service Provider's backend and forwarded to <strong>OpenAI, L.L.C.</strong>, a third-party AI service provider located in the United States. This occurs only when you actively use these features and only to provide the requested functionality.</p>
+  <p>OpenAI is required to handle your data in accordance with its own <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>, which provides protections equivalent to or greater than those described here. The Service Provider does not sell your data or share it with any other third party.</p>
 
   <h2>What are my opt-out rights?</h2>
   <p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p>
@@ -36,17 +47,33 @@
   <p>The Application is not used to knowingly solicit data from or market to children under the age of 13.</p>
   <p>The Service Provider does not knowingly collect personally identifiable information from children. The Service Provider encourages all children to never submit any personally identifiable information through the Application and/or Services. The Service Provider encourage parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to the Service Provider through the Application and/or Services, please contact the Service Provider (<a href="mailto:robert_schirmer@gmx.de">robert_schirmer@gmx.de</a>) so that they will be able to take the necessary actions. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).</p>
 
-  <h2>Third-Party AI Services (OpenAI)</h2>
-  <p>The Application uses artificial intelligence features powered by <strong>OpenAI, L.L.C.</strong> ("OpenAI"). When you use AI-assisted features within the Application, the content or data you submit (such as text input or queries) may be transmitted to OpenAI's servers for processing.</p>
-  <p>By using these features, you consent to your input data being sent to and processed by OpenAI in accordance with <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI's Privacy Policy</a> and <a href="https://openai.com/policies/usage-policies" target="_blank" rel="noopener">Usage Policies</a>. OpenAI may use submitted data to provide and improve their services, subject to their own policies.</p>
-  <p>The Service Provider does not sell or otherwise share your AI inputs with any party other than OpenAI for the purpose of delivering AI features. You may avoid the use of AI features to prevent data from being sent to OpenAI.</p>
+  <h2>Third-Party AI Services (OpenAI) – Data Disclosure &amp; Your Consent</h2>
+  <p>The Application uses artificial intelligence features powered by <strong>OpenAI, L.L.C.</strong> ("OpenAI"), 3180 18th St, San Francisco, CA 94110, USA. AI requests are routed through the Service Provider's backend server; you do not need to provide an OpenAI API key.</p>
+
+  <p><strong>What data is sent:</strong> When you actively use AI-assisted features, the following data is transmitted to the Service Provider's backend and then forwarded to OpenAI's servers:</p>
+  <ul>
+    <li><strong>Camera images</strong> (resized) — when you tap "Photo" or "Text".</li>
+    <li><strong>Voice transcriptions</strong> (text only, transcribed on-device) — when you use Follow-Up mode.</li>
+    <li><strong>Generated text for speech synthesis</strong> — forwarded to OpenAI's TTS API for spoken output.</li>
+  </ul>
+  <p>No other personal data (e.g., your name, email address, location, or device identifiers) is sent to OpenAI.</p>
+
+  <p><strong>Who receives the data:</strong> Content is sent exclusively to OpenAI, L.L.C. via the Service Provider's backend. It is not sold or shared with any other third party.</p>
+
+  <p><strong>How the data is collected:</strong> Data is transmitted only when you actively interact with AI-powered features. The Application does not passively collect or transmit data in the background.</p>
+
+  <p><strong>Your permission – explicit consent required:</strong> Before you use the Application for the first time, it presents a clear, prominent notice explaining exactly what data will be sent and to whom, and asks for your explicit consent. No data is transmitted without your prior, active agreement.</p>
+
+  <p><strong>Purpose:</strong> Your input is transmitted solely to fulfil your request for an AI-generated response. OpenAI processes the data in accordance with its <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://openai.com/policies/usage-policies" target="_blank" rel="noopener">Usage Policies</a>.</p>
+
+  <p><strong>Data retention:</strong> The Service Provider does not store images, voice transcriptions, or AI-generated text on its servers. Usage logs store only token counts and cost estimates — no content. Retention of content data is governed solely by OpenAI's own policies.</p>
 
   <h2>Security</h2>
-  <p>The Service Provider is concerned about safeguarding the confidentiality of your information. Beyond data transmitted to OpenAI as described above, the Application does not collect any information, minimizing the risk of your data being accessed by unauthorized individuals.</p>
+  <p>The Service Provider is concerned about safeguarding the confidentiality of your information. The backend uses industry-standard security practices including HMAC request signing, short-lived JWTs, and encrypted database connections. Only anonymised device data (as described above) is stored; no images or content are retained.</p>
 
   <h2>Changes</h2>
   <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to their Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>
-  <p>This privacy policy is effective as of 2026-05-04</p>
+  <p>This privacy policy is effective as of 2026-07-16</p>
 
   <h2>Your Consent</h2>
   <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by the Service Provider.</p>
