@@ -1,4 +1,12 @@
-# How to Set Up Your OpenAI API Key for Urobi
+# This document has moved
+
+The old "bring your own OpenAI API key" setup guide no longer applies. Urobi now calls OpenAI through the Urobi backend — no API key is required in the app.
+
+Please see the new **[User Manual](user-manual.html)** for current setup and usage instructions.
+
+---
+
+*Archived content below (no longer applicable):*
 
 Follow these steps to create an OpenAI account, generate an API key, and connect it to the Urobi app.
 

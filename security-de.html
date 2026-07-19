@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sicherheitsübersicht – Urobi</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.1rem; margin-top: 2em; }
+    a { color: #007aff; }
+    .back { margin-bottom: 2em; display: inline-block; }
+    hr { margin: 2em 0; border: none; border-top: 1px solid #ddd; }
+    footer { font-size: 0.85rem; color: #888; }
+  </style>
+</head>
+<body>
+  <a class="back" href="index.html">← Zurück</a>
+  <h1>Sicherheitsübersicht</h1>
+  <p>Dieses Dokument erklärt in einfacher Sprache, wie Urobi deine Daten schützt.</p>
+
+  <h2>1. Keine Konten, keine Passwörter</h2>
+  <p>Urobi verwendet keine E-Mail/Passwort-Konten. Jedes Gerät erzeugt beim ersten Start eine zufällige, anonyme Kennung (UUID), die sicher im iOS-Schlüsselbund gespeichert wird und nicht mit deiner Apple-ID, deinem Namen oder deiner Identität verknüpft werden kann.</p>
+
+  <h2>2. Übertragungssicherheit</h2>
+  <p>Die gesamte Kommunikation zwischen App und Urobi-Backend erfolgt über <strong>HTTPS/TLS</strong>, durchgesetzt durch iOS App Transport Security (ATS). Reines HTTP ist nur für lokale Entwicklungs-Builds zu <code>localhost</code> erlaubt und wird in Produktion nie verwendet. Das Backend ist über einen <strong>nginx-Reverse-Proxy</strong> mit gültigem TLS-Zertifikat, HSTS und moderner Cipher-Konfiguration abgesichert.</p>
+
+  <h2>3. Authentifizierung von Anfragen</h2>
+  <p>Bei der Registrierung erhält jedes Gerät ein eindeutiges <strong>HMAC-Secret</strong>, das sicher auf dem Gerät gespeichert wird. Jede API-Anfrage wird damit signiert, sodass Anfragen nicht gefälscht oder von einem anderen Gerät wiederverwendet werden können. Kurzlebige <strong>JWT-Zugriffstoken</strong> autorisieren jede Anfrage; ein separates, langlebiges <strong>Refresh-Token</strong> (30 Tage) dient ausschließlich dazu, neue Zugriffstoken zu erhalten.</p>
+
+  <h2>4. Ratenbegrenzung &amp; Missbrauchsschutz</h2>
+  <p>Das Backend erzwingt Kontingent- und Ratenbegrenzungs-Middleware pro Gerät. <strong>fail2ban</strong> wird auf Infrastrukturebene eingesetzt und blockiert automatisch IPs mit Authentifizierungs-Missbrauch oder übermäßigen Anfrageraten. Geräte können serverseitig gesperrt werden, ohne andere Nutzer zu beeinträchtigen.</p>
+
+  <h2>5. Datenminimierung</h2>
+  <p>Das Urobi-Backend speichert <strong>keine</strong> Fotos, Sprachaufnahmen oder KI-generierten Texte. Diese werden nur für die Dauer einer einzelnen Anfrage im Arbeitsspeicher verarbeitet und danach verworfen. Es werden nur minimale, anonyme Metadaten gespeichert (Geräte-ID, Guthabenstand, Token-Zähler, Zeitstempel) — ausschließlich zur Abrechnung und Missbrauchsprävention. Spracheingaben werden <strong>auf dem Gerät</strong> transkribiert; nur der resultierende Text verlässt das Telefon.</p>
+
+  <h2>6. Datenbank- &amp; Infrastruktursicherheit</h2>
+  <p>Die Backend-Datenbank (PostgreSQL) wird ausschließlich über verschlüsselte Verbindungen angesprochen und ist nicht direkt aus dem Internet erreichbar. Das Backend läuft in isolierten Docker-Containern, die API, Datenbank und Reverse-Proxy trennen.</p>
+
+  <h2>7. Verarbeitung durch Dritte</h2>
+  <p>KI-Anfragen werden von unserem Backend an <strong>OpenAI, L.L.C.</strong> weitergeleitet, die als Auftragsverarbeiter ausschließlich zur Erfüllung deiner Anfrage tätig wird. OpenAI erhält nicht deine Geräteidentität. Käufe werden vollständig von Apple abgewickelt; Urobi sieht oder speichert niemals Zahlungsdaten.</p>
+
+  <h2>8. Sicherheitslücken melden</h2>
+  <p>Solltest du eine Sicherheitslücke entdecken, melde sie bitte verantwortungsvoll und vertraulich vor jeder öffentlichen Bekanntgabe:</p>
+  <p><strong>E-Mail:</strong> <a href="mailto:robert_schirmer@gmx.de">robert_schirmer@gmx.de</a></p>
+
+  <h2>9. Weitere Dokumente</h2>
+  <ul>
+    <li><a href="privacy-policy-de.html">Datenschutzerklärung</a></li>
+    <li><a href="terms-and-conditions-de.html">Nutzungsbedingungen</a></li>
+    <li><a href="compliance-de.html">Compliance-Übersicht</a></li>
+    <li><a href="user-manual-de.html">Benutzerhandbuch</a></li>
+  </ul>
+
+  <hr />
+  <footer>Diese Sicherheitsübersicht wurde zuletzt am 19.07.2026 aktualisiert. · <a href="security.html">English</a></footer>
+</body>
+</html>

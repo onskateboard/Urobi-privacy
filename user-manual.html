@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Manual & Support – Urobi</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.1rem; margin-top: 2em; }
+    a { color: #007aff; }
+    .back { margin-bottom: 2em; display: inline-block; }
+    hr { margin: 2em 0; border: none; border-top: 1px solid #ddd; }
+    footer { font-size: 0.85rem; color: #888; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+    code { background: #f4f4f4; padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <a class="back" href="index.html">← Back</a>
+  <h1>User Manual &amp; Support</h1>
+  <p>Welcome to Urobi, an app that helps people with limited vision understand their surroundings using the camera, AI, and text‑to‑speech. This page is the official <strong>Support</strong> page for the app and answers the most common questions about using it.</p>
+
+  <h2>1. Getting Started</h2>
+  <ol>
+    <li>Install Urobi from the App Store and open it.</li>
+    <li>On first launch you'll see a consent screen explaining that photos, optional voice questions, and generated descriptions are sent to our backend server for AI processing. You must accept this to use the app.</li>
+    <li>No account, sign-in, or API key is required. Every device automatically receives a free credit grant (about 12 image analyses) the first time it connects to our server.</li>
+    <li>Point the camera at what you'd like described and tap one of the two main buttons:
+      <ul>
+        <li><strong>Describe</strong> — describes the scene or object in front of the camera.</li>
+        <li><strong>Scan Text</strong> — reads aloud any text visible in the camera view (signs, labels, menus, documents).</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>2. Features</h2>
+  <table>
+    <tr><th>Feature</th><th>What it does</th></tr>
+    <tr><td><strong>Describe</strong></td><td>Takes a photo and produces a short, natural-language description, spoken aloud.</td></tr>
+    <tr><td><strong>Scan Text</strong></td><td>Reads any visible text aloud (OCR-style, powered by the AI vision model).</td></tr>
+    <tr><td><strong>Follow‑Up questions</strong></td><td>After a description, ask a spoken follow-up question (e.g. "What color is it?") and get a spoken answer, using the same photo as context.</td></tr>
+    <tr><td><strong>Siri Shortcut</strong></td><td>Say "Hey Siri, Describe with Urobi" to trigger a description hands-free.</td></tr>
+    <tr><td><strong>Voice output</strong></td><td>Choose between the on-device iOS voice or higher-quality AI voices in Settings.</td></tr>
+    <tr><td><strong>Language</strong></td><td>Responses automatically match your device's language (English/German and others).</td></tr>
+  </table>
+
+  <h2>3. Credits &amp; Purchases</h2>
+  <p>Urobi uses a simple credit system instead of a subscription:</p>
+  <ul>
+    <li><strong>Free credits</strong> — every device gets a one-time free grant automatically, no payment or sign-up needed.</li>
+    <li><strong>Credit packs</strong> — once your free credits run out, you can buy more directly through Apple's In‑App Purchase, in four sizes (small to large). Prices are shown in your local currency in the app.</li>
+    <li><strong>No expiry</strong> — purchased credits never expire as long as the app and service are available.</li>
+    <li><strong>No subscription</strong> — you are never charged automatically or recurringly. Every purchase is a one-time, consumable Apple In‑App Purchase.</li>
+    <li>Your balance is shown in <strong>Settings</strong> and a banner warns you when you're running low.</li>
+    <li>All purchases are processed and refunded exclusively through Apple. Urobi never handles your payment details directly.</li>
+  </ul>
+
+  <h2>4. How Your Data Is Used</h2>
+  <ul>
+    <li>Urobi has <strong>no user accounts</strong> — your device is identified only by a random, anonymous ID stored securely in the iOS Keychain.</li>
+    <li>When you use Describe, Scan Text, or Follow‑Up, the photo (resized) and, if applicable, the transcribed text of your spoken question are sent securely to the Urobi backend server, which forwards them to our AI provider (OpenAI) to generate the response.</li>
+    <li>Voice questions are transcribed <strong>on your device</strong>; only the resulting text — never raw audio — leaves your phone.</li>
+    <li>Photos, audio, and AI responses are <strong>not stored</strong> on our servers. Only anonymous usage metadata (token counts, timestamps) is kept, for billing and abuse-prevention.</li>
+    <li>See the full <a href="privacy-policy.html">Privacy Policy</a> and <a href="security.html">Security Overview</a> for details.</li>
+  </ul>
+
+  <h2>5. Troubleshooting</h2>
+  <p><strong>"No response" / spinner doesn't stop</strong></p>
+  <ul>
+    <li>Check your internet connection (Wi‑Fi or mobile data) — Urobi requires an active connection for every request.</li>
+    <li>Make sure the app has camera and microphone permission under iOS Settings → Urobi.</li>
+  </ul>
+  <p><strong>"Insufficient credits" message</strong></p>
+  <ul>
+    <li>Your free credits or last purchased pack are used up. Open Settings → Buy Credits to purchase another pack.</li>
+  </ul>
+  <p><strong>Purchase didn't unlock credits</strong></p>
+  <ul>
+    <li>Open Settings and pull down to refresh your balance. If the App Store confirmed the purchase but credits are still missing after a minute, use "Restore Purchases" or contact support below with your purchase date.</li>
+  </ul>
+  <p><strong>Microphone / Follow‑Up not working</strong></p>
+  <ul>
+    <li>Ensure Speech Recognition and Microphone permissions are enabled under iOS Settings → Privacy &amp; Security.</li>
+  </ul>
+  <p><strong>The app doesn't speak with the AI voice</strong></p>
+  <ul>
+    <li>Check Settings → Voice Engine, and ensure you have enough credits, since AI voice output also consumes credits.</li>
+  </ul>
+
+  <h2>6. Accessibility</h2>
+  <p>Urobi is designed primarily for users who are blind or have low vision:</p>
+  <ul>
+    <li>Full VoiceOver support throughout the app.</li>
+    <li>Large, high-contrast primary action buttons.</li>
+    <li>Every result is automatically read aloud, no need to read the screen.</li>
+    <li>Siri Shortcut support for fully hands-free operation.</li>
+  </ul>
+  <p>If you encounter any accessibility issue, please contact us — accessibility bugs are treated as high priority.</p>
+
+  <h2>7. Contact &amp; Support</h2>
+  <p>For any question, bug report, billing issue, or feedback:</p>
+  <p><strong>Email:</strong> <a href="mailto:robert_schirmer@gmx.de">robert_schirmer@gmx.de</a></p>
+  <p>Related documents:</p>
+  <ul>
+    <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="security.html">Security Overview</a></li>
+    <li><a href="compliance.html">Compliance Overview</a></li>
+  </ul>
+
+  <hr />
+  <footer>This User Manual was last updated on 2026-07-19. · <a href="user-manual-de.html">Deutsch</a></footer>
+</body>
+</html>

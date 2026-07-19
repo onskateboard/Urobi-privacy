@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compliance Overview – Urobi</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.1rem; margin-top: 2em; }
+    a { color: #007aff; }
+    .back { margin-bottom: 2em; display: inline-block; }
+    hr { margin: 2em 0; border: none; border-top: 1px solid #ddd; }
+    footer { font-size: 0.85rem; color: #888; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <a class="back" href="index.html">← Back</a>
+  <h1>Compliance Overview</h1>
+  <p>This document summarizes how Urobi is designed to comply with Apple App Store guidelines and applicable data protection law. It is a plain-language overview and does not replace the <a href="terms-and-conditions.html">Terms &amp; Conditions</a> or <a href="privacy-policy.html">Privacy Policy</a>, which remain the legally binding documents.</p>
+
+  <h2>1. App Store Guidelines</h2>
+  <ul>
+    <li><strong>Payments (Guideline 3.1.1):</strong> All purchasable digital content (credit packs) is sold exclusively through Apple's In‑App Purchase (StoreKit 2). No external payment links or alternative payment mechanisms are used.</li>
+    <li><strong>Consumables, not subscriptions:</strong> Credit packs are one-time, consumable purchases. There is no auto-renewing subscription, so there is no recurring billing to manage or cancel.</li>
+    <li><strong>Transparent pricing (Guideline 3.1.2):</strong> Prices and the approximate number of AI requests per pack are always displayed in the app before purchase, in the user's local currency.</li>
+    <li><strong>Support URL:</strong> A single, always-available Support URL is provided — the <a href="user-manual.html">User Manual</a> — covering usage instructions, troubleshooting, and a direct contact email.</li>
+    <li><strong>Privacy Nutrition Label:</strong> Data types collected (device identifier, usage/diagnostics data) are declared accurately in App Store Connect and match the <a href="privacy-policy.html">Privacy Policy</a>.</li>
+    <li><strong>Third-party content disclosure (Guideline 5.1.1):</strong> The use of a third-party AI provider (OpenAI) is disclosed in-app before first use, and consent is required before any data is transmitted.</li>
+  </ul>
+
+  <h2>2. GDPR / Data Protection (EU Users)</h2>
+  <ul>
+    <li><strong>Legal basis:</strong> Processing of anonymous device data is based on the necessity to perform the service you request (Art. 6(1)(b) GDPR) and, for AI-processing of your images/voice, your explicit consent (Art. 6(1)(a) GDPR), collected via an in-app consent screen before first use.</li>
+    <li><strong>Data minimization:</strong> Only an anonymous device ID, credit/usage metadata, and short-lived security tokens are stored. No name, email, or precise location is collected.</li>
+    <li><strong>Processor relationship:</strong> OpenAI, L.L.C. acts as a data processor for AI inference requests, bound by its own <a href="https://openai.com/policies/privacy-policy">Privacy Policy</a> and standard contractual safeguards for international transfers (servers located in the United States).</li>
+    <li><strong>Data subject rights:</strong> Because no personal account exists, most requests (access, deletion) are fulfilled by identifying the anonymous device and, on request, purging its associated records. Contact <a href="mailto:robert_schirmer@gmx.de">robert_schirmer@gmx.de</a> to exercise these rights.</li>
+    <li><strong>Retention:</strong> Usage logs and credit transaction history are retained only as long as necessary for billing/fraud-prevention purposes; no image, voice, or AI-response content is retained at all.</li>
+  </ul>
+
+  <h2>3. Children's Privacy</h2>
+  <p>Urobi is not directed at children under 13 (or the equivalent minimum age in your country) and does not knowingly collect personal data from them. See the <a href="privacy-policy.html">Privacy Policy</a> "Children" section for full detail and how to report a concern.</p>
+
+  <h2>4. Accessibility Compliance</h2>
+  <p>Urobi is built as an assistive tool for blind and low-vision users and follows Apple's Human Interface Guidelines for Accessibility: full VoiceOver labeling, Dynamic Type-friendly layout, and audio-first feedback for every result.</p>
+
+  <h2>5. Sub-processors</h2>
+  <table>
+    <tr><th>Sub-processor</th><th>Purpose</th><th>Location</th></tr>
+    <tr><td>OpenAI, L.L.C.</td><td>AI image analysis, text generation, text-to-speech</td><td>United States</td></tr>
+    <tr><td>Apple Inc. (App Store / StoreKit)</td><td>Payment processing for credit packs</td><td>Global (Apple infrastructure)</td></tr>
+    <tr><td>Hosting provider for the Urobi backend</td><td>Application hosting, database, reverse proxy</td><td>EU</td></tr>
+  </table>
+
+  <h2>6. Document Index</h2>
+  <ul>
+    <li><a href="user-manual.html">User Manual</a> — how to use the app (this is the App Store Support URL destination)</li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+    <li><a href="security.html">Security Overview</a></li>
+  </ul>
+
+  <hr />
+  <footer>This Compliance Overview was last updated on 2026-07-19. · <a href="compliance-de.html">Deutsch</a></footer>
+</body>
+</html>

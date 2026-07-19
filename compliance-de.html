@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compliance-Übersicht – Urobi</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.1rem; margin-top: 2em; }
+    a { color: #007aff; }
+    .back { margin-bottom: 2em; display: inline-block; }
+    hr { margin: 2em 0; border: none; border-top: 1px solid #ddd; }
+    footer { font-size: 0.85rem; color: #888; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <a class="back" href="index.html">← Zurück</a>
+  <h1>Compliance-Übersicht</h1>
+  <p>Dieses Dokument fasst zusammen, wie Urobi die Richtlinien des Apple App Store und geltendes Datenschutzrecht einhält. Es ersetzt nicht die <a href="terms-and-conditions-de.html">Nutzungsbedingungen</a> oder die <a href="privacy-policy-de.html">Datenschutzerklärung</a>, die weiterhin rechtlich bindend sind.</p>
+
+  <h2>1. App-Store-Richtlinien</h2>
+  <ul>
+    <li><strong>Zahlungen (Richtlinie 3.1.1):</strong> Alle kaufbaren digitalen Inhalte (Guthabenpakete) werden ausschließlich über Apples In-App-Kauf (StoreKit 2) verkauft. Es werden keine externen Zahlungslinks oder alternativen Zahlungsmechanismen verwendet.</li>
+    <li><strong>Verbrauchsgüter statt Abonnement:</strong> Guthabenpakete sind einmalige, verbrauchbare Käufe. Es gibt kein automatisch verlängerndes Abonnement.</li>
+    <li><strong>Transparente Preise (Richtlinie 3.1.2):</strong> Preise und die ungefähre Anzahl an KI-Anfragen pro Paket werden vor dem Kauf stets in der App in der lokalen Währung angezeigt.</li>
+    <li><strong>Support-URL:</strong> Es wird eine einzige, dauerhaft verfügbare Support-URL bereitgestellt — das <a href="user-manual-de.html">Benutzerhandbuch</a> — mit Nutzungshinweisen, Problembehandlung und direkter Kontakt-E-Mail.</li>
+    <li><strong>App-Datenschutz-Kennzeichnung:</strong> Erhobene Datentypen (Geräte-ID, Nutzungs-/Diagnosedaten) werden korrekt in App Store Connect angegeben und entsprechen der <a href="privacy-policy-de.html">Datenschutzerklärung</a>.</li>
+    <li><strong>Offenlegung von Drittanbietern (Richtlinie 5.1.1):</strong> Die Nutzung eines KI-Drittanbieters (OpenAI) wird vor der ersten Nutzung in der App offengelegt; die Zustimmung ist Voraussetzung für jede Datenübertragung.</li>
+  </ul>
+
+  <h2>2. DSGVO / Datenschutz (EU-Nutzer)</h2>
+  <ul>
+    <li><strong>Rechtsgrundlage:</strong> Die Verarbeitung anonymer Gerätedaten stützt sich auf die Erforderlichkeit zur Erbringung der angeforderten Leistung (Art. 6 Abs. 1 lit. b DSGVO) sowie, für die KI-Verarbeitung von Bildern/Sprache, auf deine ausdrückliche Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die vor der ersten Nutzung eingeholt wird.</li>
+    <li><strong>Datenminimierung:</strong> Es werden nur eine anonyme Geräte-ID, Guthaben-/Nutzungsmetadaten und kurzlebige Sicherheitstoken gespeichert. Kein Name, keine E-Mail, kein genauer Standort werden erhoben.</li>
+    <li><strong>Auftragsverarbeiter:</strong> OpenAI, L.L.C. agiert als Auftragsverarbeiter für KI-Anfragen, gebunden an die eigene <a href="https://openai.com/policies/privacy-policy">Datenschutzerklärung</a> und Standardvertragsklauseln für internationale Übermittlungen (Server in den USA).</li>
+    <li><strong>Betroffenenrechte:</strong> Da kein persönliches Konto existiert, werden Anfragen (Auskunft, Löschung) durch Identifikation des anonymen Geräts erfüllt. Kontakt: <a href="mailto:robert_schirmer@gmx.de">robert_schirmer@gmx.de</a>.</li>
+    <li><strong>Speicherdauer:</strong> Nutzungsprotokolle und Guthaben-Transaktionshistorie werden nur so lange gespeichert, wie es für Abrechnung/Missbrauchsprävention nötig ist; Bild-, Sprach- oder KI-Antwortinhalte werden gar nicht gespeichert.</li>
+  </ul>
+
+  <h2>3. Datenschutz für Kinder</h2>
+  <p>Urobi richtet sich nicht an Kinder unter 13 Jahren (bzw. dem entsprechenden Mindestalter in deinem Land) und erhebt wissentlich keine personenbezogenen Daten von ihnen.</p>
+
+  <h2>4. Barrierefreiheits-Compliance</h2>
+  <p>Urobi wurde als assistives Werkzeug für blinde und sehbehinderte Nutzer entwickelt und folgt Apples Human Interface Guidelines für Barrierefreiheit: vollständige VoiceOver-Beschriftung, Dynamic-Type-freundliches Layout und audio-first Feedback für jedes Ergebnis.</p>
+
+  <h2>5. Unterauftragsverarbeiter</h2>
+  <table>
+    <tr><th>Unterauftragsverarbeiter</th><th>Zweck</th><th>Standort</th></tr>
+    <tr><td>OpenAI, L.L.C.</td><td>KI-Bildanalyse, Textgenerierung, Sprachausgabe</td><td>USA</td></tr>
+    <tr><td>Apple Inc. (App Store / StoreKit)</td><td>Zahlungsabwicklung für Guthabenpakete</td><td>Global (Apple-Infrastruktur)</td></tr>
+    <tr><td>Hosting-Anbieter des Urobi-Backends</td><td>Anwendungshosting, Datenbank, Reverse-Proxy</td><td>EU</td></tr>
+  </table>
+
+  <h2>6. Dokumentenübersicht</h2>
+  <ul>
+    <li><a href="user-manual-de.html">Benutzerhandbuch</a> — Nutzungsanleitung (Ziel der App-Store-Support-URL)</li>
+    <li><a href="privacy-policy-de.html">Datenschutzerklärung</a></li>
+    <li><a href="terms-and-conditions-de.html">Nutzungsbedingungen</a></li>
+    <li><a href="security-de.html">Sicherheitsübersicht</a></li>
+  </ul>
+
+  <hr />
+  <footer>Diese Compliance-Übersicht wurde zuletzt am 19.07.2026 aktualisiert. · <a href="compliance.html">English</a></footer>
+</body>
+</html>
