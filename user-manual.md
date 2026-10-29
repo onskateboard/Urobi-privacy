@@ -6,7 +6,7 @@ Welcome to Urobi, an app that helps people with limited vision understand their 
 
 ## 1. Getting Started
 
-1. Install Urobi from the App Store and open it.
+1. Install Urobi from the App Store (iPhone) or Google Play (Android) and open it.
 2. On first launch you'll see a consent screen explaining that photos, optional voice questions, and generated descriptions are sent to our backend server for AI processing. You must accept this to use the app.
 3. No account, sign-in, or API key is required. Every device automatically receives a free credit grant (about 12 image analyses) the first time it connects to our server.
 4. Point the camera at what you'd like described and tap one of the two main buttons:
@@ -29,11 +29,11 @@ Welcome to Urobi, an app that helps people with limited vision understand their 
 Urobi uses a simple credit system instead of a subscription:
 
 - **Free credits** — every device gets a one-time free grant automatically, no payment or sign-up needed.
-- **Credit packs** — once your free credits run out, you can buy more directly through Apple's In‑App Purchase, in four sizes (small to large). Prices are shown in your local currency in the app.
+- **Credit packs** — once your free credits run out, you can buy more directly through your store's in‑app purchase (Apple's In‑App Purchase on iPhone, Google Play on Android), in four sizes (small to large). Prices are shown in your local currency in the app.
 - **No expiry** — purchased credits never expire as long as the app and service are available.
-- **No subscription** — you are never charged automatically or recurringly. Every purchase is a one-time, consumable Apple In‑App Purchase.
+- **No subscription** — you are never charged automatically or recurringly. Every purchase is a one-time, consumable in‑app purchase (Apple or Google Play).
 - Your balance is shown in **Settings** and a banner warns you when you're running low.
-- All purchases are processed and refunded exclusively through Apple. Urobi never handles your payment details directly.
+- All purchases are processed and refunded exclusively through Apple (iPhone) or Google Play (Android). Urobi never handles your payment details directly.
 
 ## 4. How Your Data Is Used
 
@@ -53,7 +53,7 @@ Urobi uses a simple credit system instead of a subscription:
 - Your free credits or last purchased pack are used up. Open Settings → Buy Credits to purchase another pack.
 
 **Purchase didn't unlock credits**
-- Open Settings and pull down to refresh your balance. If the App Store confirmed the purchase but credits are still missing after a minute, use "Restore Purchases" or contact support (below) with your purchase date.
+- Open Settings and pull down to refresh your balance. If the App Store or Google Play confirmed the purchase but credits are still missing after a minute, use "Restore Purchases" or contact support (below) with your purchase date. On Android, Urobi also re-checks your purchases automatically each time the app starts.
 
 **Microphone / Follow‑Up not working**
 - Ensure Speech Recognition and Microphone permissions are enabled under iOS Settings → Privacy & Security.

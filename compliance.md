@@ -1,10 +1,10 @@
 # Urobi – Compliance Overview
 
-This document summarizes how Urobi is designed to comply with Apple App Store guidelines and applicable data protection law. It is a plain-language overview and does not replace the [Terms & Conditions](terms-and-conditions.html) or [Privacy Policy](privacy-policy.html), which remain the legally binding documents.
+This document summarizes how Urobi is designed to comply with the Apple App Store and Google Play guidelines and applicable data protection law. It is a plain-language overview and does not replace the [Terms & Conditions](terms-and-conditions.html) or [Privacy Policy](privacy-policy.html), which remain the legally binding documents.
 
 ## 1. App Store Guidelines
 
-- **Payments (Guideline 3.1.1):** All purchasable digital content (credit packs) is sold exclusively through Apple's In‑App Purchase (StoreKit 2). No external payment links, alternative payment mechanisms, or account-based subscriptions are used.
+- **Payments (Guideline 3.1.1):** All purchasable digital content (credit packs) is sold exclusively through each platform's own billing system: Apple's In‑App Purchase (StoreKit 2) on iOS and Google Play Billing on Android (in line with the Google Play Payments policy). No external payment links, alternative payment mechanisms, or account-based subscriptions are used.
 - **Consumables, not subscriptions:** Credit packs are one-time, consumable purchases. There is no auto-renewing subscription, so there is no recurring billing to manage or cancel.
 - **Transparent pricing (Guideline 3.1.2):** Prices and the approximate number of AI requests per pack are always displayed in the app before purchase, in the user's local currency.
 - **Support URL (Guideline 1.5 / App Store Connect metadata):** A single, always-available Support URL is provided (this documentation site's [User Manual](user-manual.html)), covering usage instructions, troubleshooting, and a direct contact email.
@@ -32,7 +32,8 @@ This document summarizes how Urobi is designed to comply with Apple App Store gu
 | Sub-processor | Purpose | Location |
 |---|---|---|
 | OpenAI, L.L.C. | AI image analysis, text generation, text-to-speech | United States |
-| Apple Inc. (App Store / StoreKit) | Payment processing for credit packs | Global (Apple infrastructure) |
+| Apple Inc. (App Store / StoreKit) | Payment processing for credit packs (iOS) | Global (Apple infrastructure) |
+| Google LLC (Google Play Billing) | Payment processing for credit packs (Android) | Global (Google infrastructure) |
 | Hosting provider for the Urobi backend | Application hosting, database, reverse proxy | EU |
 
 ## 6. Document Index

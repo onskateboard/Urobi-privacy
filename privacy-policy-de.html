@@ -25,12 +25,13 @@
   <p>Die Anwendung erfasst keine personenbezogenen Daten (wie Name, E-Mail-Adresse oder Standort) direkt von dir. Eine Registrierung ist für die Nutzung der Anwendung nicht erforderlich.</p>
   <p>Zur Bereitstellung ihrer Dienste kommuniziert die Anwendung mit einem vom Anbieter betriebenen Backend-Server. Das Backend speichert folgende Daten, die mit einer anonymen Gerätekennung verknüpft sind:</p>
   <ul>
-    <li><strong>Anonyme Geräte-ID</strong> — eine zufällig generierte Kennung (UUID), die deinem Gerät zugewiesen wird und nicht mit deinem Namen, deiner Apple-ID oder einer persönlichen Identität verknüpft ist.</li>
+    <li><strong>Anonyme Geräte-ID</strong> — eine zufällig generierte Kennung (UUID), die deinem Gerät zugewiesen wird und nicht mit deinem Namen, deiner Apple-ID, deinem Google-Konto oder einer persönlichen Identität verknüpft ist.</li>
     <li><strong>Stufe &amp; Guthaben</strong> — ob dein Gerät die kostenlose oder die Standard-Stufe nutzt, und dein aktuelles Guthaben.</li>
     <li><strong>Nutzungsprotokolle</strong> — pro Anfrage: verwendetes KI-Modell, Token-Anzahl, geschätzte Kosten und Zeitstempel. Werden zu Abrechnungs- und Betrugserkennungszwecken gespeichert.</li>
     <li><strong>Guthaben-Transaktionsverlauf</strong> — ein Prüfprotokoll für kostenlose Grants, Käufe und Abzüge.</li>
+    <li><strong>Kaufprüfung</strong> — wenn du Guthaben kaufst, werden der Kaufbeleg (Apple) bzw. das Kauf-Token (Google Play) und die Produkt-ID an das Backend gesendet, das sie bei Apple bzw. Google verifiziert. Zahlungsdaten gelangen niemals zum Anbieter.</li>
     <li><strong>Sicherheits-Token</strong> — ein Refresh-Token (30 Tage gültig) und ein gerätespezifisches HMAC-Geheimnis zur Anfrage-Authentifizierung. Diese enthalten keine personenbezogenen Daten.</li>
-    <li><strong>App-Version &amp; letzter Zugriff</strong> — für Kompatibilitäts- und Supportzwecke.</li>
+    <li><strong>App-Plattform (iOS oder Android), App-Version &amp; letzter Zugriff</strong> — für Kompatibilitäts-, Support- und Statistikzwecke.</li>
   </ul>
   <p>Bilder, Sprachaufnahmen oder KI-generierte Texte werden nicht auf den Servern des Anbieters gespeichert.</p>
 

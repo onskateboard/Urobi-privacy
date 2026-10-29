@@ -8,12 +8,13 @@ The Application does not collect personally identifiable information (such as yo
 
 To provide its services, the Application communicates with a backend server operated by the Service Provider. The backend stores the following data linked to an anonymous device identifier:
 
-- **Anonymous device ID** — a randomly generated identifier (UUID) assigned to your device. It is not linked to your name, Apple ID, or any personal identity.
+- **Anonymous device ID** — a randomly generated identifier (UUID) assigned to your device. It is not linked to your name, Apple ID, Google account, or any personal identity.
 - **Tier & credit balance** — whether your device is on the free or standard tier, and your current credit balance.
 - **Usage logs** — per-request records including the AI model used, token counts, estimated cost, and timestamp. These are retained for billing and fraud-prevention purposes.
 - **Credit transaction history** — an audit ledger of free grants, purchases, and usage debits.
+- **Purchase verification** — when you buy credits, the purchase receipt (Apple) or purchase token (Google Play) and the product ID are sent to the backend, which verifies them with Apple or Google. No payment details ever reach the Service Provider.
 - **Security tokens** — a refresh token (valid for 30 days) and a per-device HMAC secret used to authenticate requests. These contain no personal information.
-- **App version & last seen** — used for compatibility and support purposes.
+- **App platform (iOS or Android), app version & last seen** — used for compatibility, support and usage statistics.
 
 No images, voice recordings, or AI-generated text are stored on the Service Provider's servers.
 
